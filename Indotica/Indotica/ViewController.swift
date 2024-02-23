@@ -14,6 +14,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     var alert: UIAlertController?
+    var token: String?
     private var borderView = UIView(frame: CGRect(x: 0, y: 0, width: 90, height: 90))
     
     override func viewDidLoad() {
@@ -92,10 +93,23 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             guard let stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             getData(code: stringValue)
+            getToken()
+        }
+    }
+    
+    private func getToken() {
+        TokenService.shared.getToken() { [weak self] res, err in
+            guard let self else { return }
+            if let _ = err { return }
+            if let data = res {
+                print("info obtenida")
+                print(res)
+            }
         }
     }
     
     func getData(code: String) {
+        token = code
         alert = UIAlertController(title: "QR Code", message: code, preferredStyle: .alert)
         alert?.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
             self.captureSession.startRunning()

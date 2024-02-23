@@ -13,6 +13,9 @@
 		7621AB3A2B5767CE00250EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7621AB382B5767CE00250EBF /* Main.storyboard */; };
 		7621AB3C2B5767D000250EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7621AB3B2B5767D000250EBF /* Assets.xcassets */; };
 		7621AB3F2B5767D000250EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7621AB3D2B5767D000250EBF /* LaunchScreen.storyboard */; };
+		76F8508E2B89070C00386A9A /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8508D2B89070C00386A9A /* ApiService.swift */; };
+		76F850912B8918CF00386A9A /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F850902B8918CF00386A9A /* TokenResponse.swift */; };
+		76F850932B89191400386A9A /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F850922B89191400386A9A /* TokenService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		7621AB3B2B5767D000250EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7621AB3E2B5767D000250EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7621AB402B5767D000250EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F8508D2B89070C00386A9A /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		76F850902B8918CF00386A9A /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		76F850922B89191400386A9A /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		7621AB312B5767CE00250EBF /* Indotica */ = {
 			isa = PBXGroup;
 			children = (
+				76F8508F2B8918C200386A9A /* Models */,
+				76F8508C2B8906F500386A9A /* Networking */,
 				7621AB322B5767CE00250EBF /* AppDelegate.swift */,
 				7621AB342B5767CE00250EBF /* SceneDelegate.swift */,
 				7621AB362B5767CE00250EBF /* ViewController.swift */,
@@ -65,6 +73,23 @@
 				7621AB402B5767D000250EBF /* Info.plist */,
 			);
 			path = Indotica;
+			sourceTree = "<group>";
+		};
+		76F8508C2B8906F500386A9A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				76F8508D2B89070C00386A9A /* ApiService.swift */,
+				76F850922B89191400386A9A /* TokenService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		76F8508F2B8918C200386A9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76F850902B8918CF00386A9A /* TokenResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +165,10 @@
 			files = (
 				7621AB372B5767CE00250EBF /* ViewController.swift in Sources */,
 				7621AB332B5767CE00250EBF /* AppDelegate.swift in Sources */,
+				76F8508E2B89070C00386A9A /* ApiService.swift in Sources */,
+				76F850932B89191400386A9A /* TokenService.swift in Sources */,
 				7621AB352B5767CE00250EBF /* SceneDelegate.swift in Sources */,
+				76F850912B8918CF00386A9A /* TokenResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
