@@ -85,33 +85,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2D4684CE-8F6C-4CD6-BD1A-E096C694C402"
+            uuid = "FB516911-F771-4276-ABFD-7F0031B13CED"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Indotica/ViewController.swift"
+            filePath = "Indotica/Networking/ApiService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "getToken()"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "requestdata(path:type:method:requestData:sessionType:encType:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8CE84706-C4C8-446C-A3E3-9D643DB77A83"
+            uuid = "5750E33A-90CD-4171-BEDF-8A222A63B504"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Indotica/ViewController.swift"
+            filePath = "Indotica/Networking/TokenService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "getToken()"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "getToken(data:completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5750E33A-90CD-4171-BEDF-8A222A63B504 - 146ffa6beee98292"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Indotica.TokenService.getToken(completion: (Swift.Optional&lt;Indotica.TokenResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Indotica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nicolasllanos/Documents/Proyectos%20Applica/Indotica-ios/Indotica/Indotica/Networking/TokenService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "5750E33A-90CD-4171-BEDF-8A222A63B504 - 8510341fccc2f057"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Indotica.TokenResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Indotica.TokenService.getToken(completion: (Swift.Optional&lt;Indotica.TokenResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Indotica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nicolasllanos/Documents/Proyectos%20Applica/Indotica-ios/Indotica/Indotica/Networking/TokenService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

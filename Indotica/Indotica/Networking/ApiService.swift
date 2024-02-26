@@ -8,8 +8,8 @@
 import Foundation
 
 struct ApiInfo {
-    static let baseURL = "http://192.168.2.13:4552"
-    static let token = "/token"
+    static let baseURL = "://192.168.2.13:4552/"
+    static let token = "auth/tokenLogin"
 }
 
 class SessionHandler {
@@ -74,6 +74,11 @@ class RequestHandler {
         return try decoder.decode(type, from: data)
     }
     
+    public func tokenFromDefaults() -> String? {
+        guard !UserDefaultsManager.shared.userToken.isEmpty else { return nil }
+        return UserDefaultsManager.shared.userToken
+    }
+    
     func requestdata<T: Decodable>(path: String,
                                     type: T.Type,
                                     method: IndoticaHTTPMethod = .get,
@@ -83,7 +88,7 @@ class RequestHandler {
                                     completionHandler: @escaping (T?, Error?) -> ()) {
         
         var urlComponents = URLComponents()
-        urlComponents.scheme = "https"
+        urlComponents.scheme = "http"
         if sessionType == .normal {
             urlComponents.host = ApiInfo.baseURL
         }
@@ -109,6 +114,13 @@ class RequestHandler {
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("Accept-Language", forHTTPHeaderField: "es")
             request.addValue("Connection", forHTTPHeaderField: "Keep-Alive")
+        }
+        
+        if sessionType == .normal {
+            if let aToken = self.tokenFromDefaults(){
+                request.setValue("Bearer " + aToken, forHTTPHeaderField: "Authorization")
+                print("Bearer " + aToken)
+            }
         }
         
         session.dataTask(with: request){ (data, response, err) in
