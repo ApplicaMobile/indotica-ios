@@ -92,7 +92,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         TokenService.shared.getToken(data: req) { res, err in
             if let _ = err { return }
             if let res = res {
-                UserDefaultsManager.shared.userToken = res.notification?.token ?? ""
+//                UserDefaultsManager.shared.userToken = res.notification?.token ?? ""
                 print("info obtenida")
                 print(res)
             }

@@ -8,19 +8,22 @@
 import Foundation
 class UserDefaultsManager: NSObject {
     
-    static let shared = UserDefaultsManager()
     private let defaults = UserDefaults.standard
-    
-    private override init() {
-        super.init()
-    }
     
     private enum DefaultsKey: String, CaseIterable {
         case userToken
     }
     
-    var userToken: String {
+    private (set) var userToken: String? {
         get { defaults.string(forKey: DefaultsKey.userToken.rawValue) ?? ""}
         set { defaults.setValue(newValue, forKey:  DefaultsKey.userToken.rawValue) }
+    }
+    
+    func clearToken() {
+        userToken = nil
+    }
+    
+    func updateToken(_ newToken: String) {
+        userToken = newToken
     }
 }
