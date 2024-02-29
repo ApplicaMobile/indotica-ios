@@ -22,20 +22,16 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     }
     
     func setupScanning() {
-        // Crear una sesión de captura
         captureSession = AVCaptureSession()
         
-        // Obtener el dispositivo de captura de video predeterminado
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
             failed()
             return
         }
         
-        // Crear un objeto de entrada de video con el dispositivo de captura
         do {
             let videoInput = try AVCaptureDeviceInput(device: videoCaptureDevice)
             
-            // Agregar la entrada de video a la sesión de captura
             if captureSession.canAddInput(videoInput) {
                 captureSession.addInput(videoInput)
             } else {
@@ -47,14 +43,10 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             return
         }
         
-        // Crear un objeto de salida de metadatos
         let metadataOutput = AVCaptureMetadataOutput()
         
-        // Agregar la salida de metadatos a la sesión de captura
         if captureSession.canAddOutput(metadataOutput) {
             captureSession.addOutput(metadataOutput)
-            
-            // Configurar el delegado y los tipos de objetos de metadatos
             metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             metadataOutput.metadataObjectTypes = [.qr]
         } else {
@@ -62,15 +54,13 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             return
         }
         
-        // Configurar la vista previa de video
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.frame = view.layer.bounds
         previewLayer.videoGravity = .resizeAspectFill
         
-        // Agregar la vista previa de video a la vista actual
         view.layer.addSublayer(previewLayer)
     }
-
+    
     
     @IBAction func loginWithQrButtonAction(_ sender: Any) {
         setupScanning()
