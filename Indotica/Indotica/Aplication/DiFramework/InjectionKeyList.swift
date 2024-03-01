@@ -21,6 +21,19 @@ private struct APIServiceKey: InjectionKey {
     static var currentValue = computedValue
 }
 
+private struct LoginRepositoryKey: InjectionKey {
+    typealias Value = LoginService
+
+    static var computedValue: LoginService {
+        @Injected(\.apiServiceProvider) var apiService: APIProtocol
+        
+        return LoginRepository(apiService: apiService)
+    }
+    
+    static var currentValue = computedValue
+}
+
+
 extension InjectedValues {
     
     var userDefaultsProvider: UserDefaultsManager {
@@ -31,5 +44,10 @@ extension InjectedValues {
     var apiServiceProvider: APIProtocol {
         get { Self[APIServiceKey.self] }
         set { Self[APIServiceKey.self] = newValue }
+    }
+    
+    var loginRepositoryProvider: LoginService {
+        get { Self[LoginRepositoryKey.self] }
+        set { Self[LoginRepositoryKey.self] = newValue }
     }
 }

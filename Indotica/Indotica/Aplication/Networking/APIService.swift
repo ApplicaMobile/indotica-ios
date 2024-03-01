@@ -80,13 +80,16 @@ class APIService: APIProtocol {
         } else {
             urlComponents.scheme = APIEndpoints.scheme
             urlComponents.host = APIEndpoints.host
+            print("*** PORT \(APIEndpoints.port)")
+            urlComponents.port = APIEndpoints.port
             urlComponents.path = path
         }
-        
+    
         if !query.isEmpty {
             urlComponents.queryItems = query
         }
-       
+        print("*** urlComp \(urlComponents)")
+        print("*** url = \(urlComponents.url)")
         return urlComponents.url
     }
 

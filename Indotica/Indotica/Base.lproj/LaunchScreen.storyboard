@@ -17,16 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indotica" translatesAutoresizingMaskIntoConstraints="NO" id="QAf-7D-jOU">
-                                <rect key="frame" x="32" y="394" width="329" height="51"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="Oxe-Zo-URh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoIndoticaBlue" translatesAutoresizingMaskIntoConstraints="NO" id="n15-yk-ldW">
+                                <rect key="frame" x="10" y="362" width="373" height="128"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QAf-7D-jOU" secondAttribute="trailing" constant="32" id="Bdg-3V-d0g"/>
-                            <constraint firstItem="QAf-7D-jOU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="335" id="CYT-57-4UQ"/>
-                            <constraint firstItem="QAf-7D-jOU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="JNq-N0-QTd"/>
+                            <constraint firstItem="n15-yk-ldW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8LG-DO-qnx"/>
+                            <constraint firstItem="Oxe-Zo-URh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ubs-je-gcv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oxe-Zo-URh" secondAttribute="trailing" id="VLF-Wf-fN5"/>
+                            <constraint firstItem="n15-yk-ldW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="303" id="VOX-TS-xz2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n15-yk-ldW" secondAttribute="bottom" constant="328" id="WdI-O9-eU0"/>
+                            <constraint firstItem="Oxe-Zo-URh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="c5c-bZ-sYL"/>
+                            <constraint firstAttribute="bottom" secondItem="Oxe-Zo-URh" secondAttribute="bottom" id="lig-L8-2cs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n15-yk-ldW" secondAttribute="trailing" constant="10" id="m1R-RF-J7d"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,7 +44,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="indotica" width="307" height="51"/>
+        <image name="Splash" width="570" height="1200"/>
+        <image name="logoIndoticaBlue" width="731" height="731"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

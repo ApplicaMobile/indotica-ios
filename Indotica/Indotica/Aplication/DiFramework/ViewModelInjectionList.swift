@@ -6,23 +6,20 @@
 //
 
 import Foundation
-//
-//private struct HomeScreenViewModelKey: InjectionKey {
-//    static var computedValue: HomeViewModel {
-//        @Injected(\.homeScreenRepositoryProvider) var homeScreenRepository: HomeScreenService
-//        @Injected(\.suiteAddressRepositoryProvider) var suiteAddressRepository: SuiteAddressService
-//        
-//        return HomeViewModel(
-//            homeScreenRepository: homeScreenRepository,
-//            suiteAddressRepository: suiteAddressRepository
-//        )
-//    }
-//    static var currentValue = computedValue
-//}
+
+private struct LoginViewModelKey: InjectionKey {
+    static var computedValue: LoginViewModel {
+        @Injected(\.loginRepositoryProvider) var loginRepository: LoginService
+        @Injected(\.userDefaultsProvider) var userDefaultRepository: UserDefaultsManager
+        
+        return LoginViewModel(loginRepository: loginRepository, userDefault: userDefaultRepository)
+    }
+    static var currentValue = computedValue
+}
 
 extension InjectedValues {
-//    var homeViewModelProvider: HomeViewModel {
-//        get { Self[HomeScreenViewModelKey.self] }
-//        set { Self[HomeScreenViewModelKey.self] = newValue }
-//    }
+    var loginViewModelProvider: LoginViewModel {
+        get { Self[LoginViewModelKey.self] }
+        set { Self[LoginViewModelKey.self] = newValue }
+    }
 }

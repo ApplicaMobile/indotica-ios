@@ -11,6 +11,6 @@ struct APIEndpoints {
     //TODO: Add base url to environment 
     static let scheme = Env.scheme.val
     static let host = Env.host.val
-    static let baseURL = "://192.168.2.13:4552/"
-    static let token = "auth/tokenLogin"
+    static let port = Env.port.intVal
+    static let token = "/auth/tokenLogin"
 }

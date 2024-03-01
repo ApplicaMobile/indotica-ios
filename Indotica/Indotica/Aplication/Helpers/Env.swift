@@ -12,6 +12,7 @@ public enum Env : String {
     case scheme = "SCHEME"
     case host = "HOST"
     case description = "DESCRIPTION"
+    case port = "PORT"
     
     static let infoPlist: [String: Any] = {
         guard let info = Bundle.main.infoDictionary else { return [:] }
@@ -20,4 +21,5 @@ public enum Env : String {
     
     var val: String { return Env.infoPlist[self.rawValue] as? String ?? "" }
     
+    var intVal: Int? { return Env.infoPlist[self.rawValue] as? Int }
 }
