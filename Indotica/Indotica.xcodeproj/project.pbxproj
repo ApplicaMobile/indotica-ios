@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7621AB332B5767CE00250EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7621AB322B5767CE00250EBF /* AppDelegate.swift */; };
 		7621AB352B5767CE00250EBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7621AB342B5767CE00250EBF /* SceneDelegate.swift */; };
-		7621AB372B5767CE00250EBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7621AB362B5767CE00250EBF /* ViewController.swift */; };
+		7621AB372B5767CE00250EBF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7621AB362B5767CE00250EBF /* HomeViewController.swift */; };
 		7621AB3A2B5767CE00250EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7621AB382B5767CE00250EBF /* Main.storyboard */; };
 		7621AB3C2B5767D000250EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7621AB3B2B5767D000250EBF /* Assets.xcassets */; };
 		7621AB3F2B5767D000250EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7621AB3D2B5767D000250EBF /* LaunchScreen.storyboard */; };
@@ -24,17 +24,21 @@
 		765DA42D2B90E5DB00346ACD /* InjectionKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DA42A2B90E5DB00346ACD /* InjectionKeyList.swift */; };
 		765DA42E2B90E5DB00346ACD /* ViewModelInjectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DA42B2B90E5DB00346ACD /* ViewModelInjectionList.swift */; };
 		765DA4302B90F48200346ACD /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DA42F2B90F48200346ACD /* DateFormatter+Extension.swift */; };
+		765DA4362B92098500346ACD /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DA4352B92098500346ACD /* LoginService.swift */; };
+		765DA4392B920AB000346ACD /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DA4382B920AB000346ACD /* LoginRepository.swift */; };
+		765DA43C2B920D5C00346ACD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DA43B2B920D5C00346ACD /* LoginViewModel.swift */; };
+		765DA4402B921A1300346ACD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DA43F2B921A1300346ACD /* LoginViewController.swift */; };
+		765DA4422B921A5100346ACD /* LoginViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765DA4412B921A5100346ACD /* LoginViewControllerStoryboard.storyboard */; };
 		76A174642B8D053700B04788 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A174632B8D053700B04788 /* UserDefaultsManager.swift */; };
 		76F470A12B8D0C4400D21A37 /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F470A02B8D0C4400D21A37 /* TokenRequest.swift */; };
 		76F850912B8918CF00386A9A /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F850902B8918CF00386A9A /* TokenResponse.swift */; };
-		76F850932B89191400386A9A /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F850922B89191400386A9A /* TokenService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7621AB2F2B5767CE00250EBF /* Indotica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Indotica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7621AB322B5767CE00250EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7621AB342B5767CE00250EBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7621AB362B5767CE00250EBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7621AB362B5767CE00250EBF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7621AB392B5767CE00250EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7621AB3B2B5767D000250EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7621AB3E2B5767D000250EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,10 +54,14 @@
 		765DA42A2B90E5DB00346ACD /* InjectionKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectionKeyList.swift; sourceTree = "<group>"; };
 		765DA42B2B90E5DB00346ACD /* ViewModelInjectionList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelInjectionList.swift; sourceTree = "<group>"; };
 		765DA42F2B90F48200346ACD /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		765DA4352B92098500346ACD /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		765DA4382B920AB000346ACD /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		765DA43B2B920D5C00346ACD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		765DA43F2B921A1300346ACD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		765DA4412B921A5100346ACD /* LoginViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
 		76A174632B8D053700B04788 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		76F470A02B8D0C4400D21A37 /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
 		76F850902B8918CF00386A9A /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
-		76F850922B89191400386A9A /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +95,10 @@
 		7621AB312B5767CE00250EBF /* Indotica */ = {
 			isa = PBXGroup;
 			children = (
+				765DA4312B91147400346ACD /* Presentation */,
 				765DA40D2B90CD6800346ACD /* Aplication */,
 				7621AB322B5767CE00250EBF /* AppDelegate.swift */,
 				7621AB342B5767CE00250EBF /* SceneDelegate.swift */,
-				7621AB362B5767CE00250EBF /* ViewController.swift */,
 				7621AB382B5767CE00250EBF /* Main.storyboard */,
 				7621AB3B2B5767D000250EBF /* Assets.xcassets */,
 				7621AB3D2B5767D000250EBF /* LaunchScreen.storyboard */,
@@ -103,6 +111,7 @@
 		765DA40D2B90CD6800346ACD /* Aplication */ = {
 			isa = PBXGroup;
 			children = (
+				765DA4372B920A9E00346ACD /* Repositories */,
 				765DA4282B90E5B100346ACD /* DiFramework */,
 				76A174622B8D050500B04788 /* Helpers */,
 				76F8508C2B8906F500386A9A /* Networking */,
@@ -137,6 +146,49 @@
 			path = DiFramework;
 			sourceTree = "<group>";
 		};
+		765DA4312B91147400346ACD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				765DA43A2B920D4600346ACD /* Login */,
+				765DA4322B91148600346ACD /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		765DA4322B91148600346ACD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7621AB362B5767CE00250EBF /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		765DA4342B92096400346ACD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				765DA4352B92098500346ACD /* LoginService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		765DA4372B920A9E00346ACD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				765DA4382B920AB000346ACD /* LoginRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		765DA43A2B920D4600346ACD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				765DA43B2B920D5C00346ACD /* LoginViewModel.swift */,
+				765DA43F2B921A1300346ACD /* LoginViewController.swift */,
+				765DA4412B921A5100346ACD /* LoginViewControllerStoryboard.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		76A174622B8D050500B04788 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,11 +202,11 @@
 		76F8508C2B8906F500386A9A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				765DA4342B92096400346ACD /* Service */,
 				765DA4172B90CE9900346ACD /* APIEndpoints.swift */,
 				765DA4182B90CE9900346ACD /* APIProtocol.swift */,
 				765DA41C2B90D24500346ACD /* APIService.swift */,
 				76F8508F2B8918C200386A9A /* Models */,
-				76F850922B89191400386A9A /* TokenService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -235,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7621AB3F2B5767D000250EBF /* LaunchScreen.storyboard in Resources */,
+				765DA4422B921A5100346ACD /* LoginViewControllerStoryboard.storyboard in Resources */,
 				7621AB3C2B5767D000250EBF /* Assets.xcassets in Resources */,
 				7621AB3A2B5767CE00250EBF /* Main.storyboard in Resources */,
 				765DA4252B90D56400346ACD /* Config.xcconfig in Resources */,
@@ -248,14 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7621AB372B5767CE00250EBF /* ViewController.swift in Sources */,
+				7621AB372B5767CE00250EBF /* HomeViewController.swift in Sources */,
 				7621AB332B5767CE00250EBF /* AppDelegate.swift in Sources */,
 				765DA42E2B90E5DB00346ACD /* ViewModelInjectionList.swift in Sources */,
 				765DA41B2B90CE9900346ACD /* APIProtocol.swift in Sources */,
 				765DA41D2B90D24500346ACD /* APIService.swift in Sources */,
 				76A174642B8D053700B04788 /* UserDefaultsManager.swift in Sources */,
-				76F850932B89191400386A9A /* TokenService.swift in Sources */,
+				765DA4392B920AB000346ACD /* LoginRepository.swift in Sources */,
 				765DA41F2B90D2E100346ACD /* EncodableRequest.swift in Sources */,
+				765DA4402B921A1300346ACD /* LoginViewController.swift in Sources */,
+				765DA4362B92098500346ACD /* LoginService.swift in Sources */,
 				765DA4212B90D3A100346ACD /* IOError.swift in Sources */,
 				765DA41A2B90CE9900346ACD /* APIEndpoints.swift in Sources */,
 				765DA42D2B90E5DB00346ACD /* InjectionKeyList.swift in Sources */,
@@ -264,6 +319,7 @@
 				76F850912B8918CF00386A9A /* TokenResponse.swift in Sources */,
 				765DA4302B90F48200346ACD /* DateFormatter+Extension.swift in Sources */,
 				76F470A12B8D0C4400D21A37 /* TokenRequest.swift in Sources */,
+				765DA43C2B920D5C00346ACD /* LoginViewModel.swift in Sources */,
 				765DA4232B90D4A200346ACD /* Env.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

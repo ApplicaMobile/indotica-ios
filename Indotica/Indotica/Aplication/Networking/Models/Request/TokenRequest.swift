@@ -6,6 +6,6 @@
 //
 
 import Foundation
-struct TokenRequest: Encodable {
+struct TokenRequest: PropertyLoopable, Encodable {
     var token: String
 }
