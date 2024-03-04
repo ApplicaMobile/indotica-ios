@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>PORT</key>
+	<integer>4552</integer>
+	<key>SCHEME</key>
+	<string>$(SCHEME)</string>
+	<key>HOST</key>
+	<string>$(HOST)</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,7 +27,7 @@
 			</array>
 		</dict>
 	</dict>
-    <key>NSCameraUsageDescription</key>
-    <string>Necesitamos acceder a tu cámara para escanear códigos QR.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Necesitamos acceder a tu cámara para escanear códigos QR.</string>
 </dict>
 </plist>

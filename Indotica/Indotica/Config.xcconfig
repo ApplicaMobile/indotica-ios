@@ -1,0 +1,14 @@
+//
+//  Config-Production.xcconfig
+//  Indotica
+//
+//  Created by Augusto Herbel on 18/07/2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+SCHEME=http
+//TODO: Edit host if needed change
+HOST=192.168.2.13
+PORT=4552
+DESCRIPTION=P

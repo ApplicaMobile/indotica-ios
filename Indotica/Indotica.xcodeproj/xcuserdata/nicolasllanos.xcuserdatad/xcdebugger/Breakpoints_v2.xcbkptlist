@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "80C78BDD-EC07-44AB-9908-E266D69A70CB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C49188CB-7B28-45C4-A801-3122A831AF7B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Indotica/Home/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "getData(code:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C49188CB-7B28-45C4-A801-3122A831AF7B - ec1c4e557f55371e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Indotica.ViewController.getData(code: Swift.String) -&gt; ()"
+                  moduleName = "Indotica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nicolasllanos/Documents/Proyectos%20Applica/Indotica-ios/Indotica/Indotica/Home/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "C49188CB-7B28-45C4-A801-3122A831AF7B - 9b6fc90cdcf95064"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; () in Indotica.ViewController.getData(code: Swift.String) -&gt; ()"
+                  moduleName = "Indotica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nicolasllanos/Documents/Proyectos%20Applica/Indotica-ios/Indotica/Indotica/Home/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "C49188CB-7B28-45C4-A801-3122A831AF7B - ec1c4e557f55371e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Indotica.ViewController.getData(code: Swift.String) -&gt; ()"
+                  moduleName = "Indotica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nicolasllanos/Documents/Proyectos%20Applica/Indotica-ios/Indotica/Indotica/Home/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "C49188CB-7B28-45C4-A801-3122A831AF7B - 9b6fc90cdcf95064"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; () in Indotica.ViewController.getData(code: Swift.String) -&gt; ()"
+                  moduleName = "Indotica"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nicolasllanos/Documents/Proyectos%20Applica/Indotica-ios/Indotica/Indotica/Home/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB516911-F771-4276-ABFD-7F0031B13CED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Indotica/Networking/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "requestdata(path:type:method:requestData:sessionType:encType:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F61B675C-8900-481D-932D-C7E68FDCE0C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Indotica/Presentation/Login/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "loginButtonAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
